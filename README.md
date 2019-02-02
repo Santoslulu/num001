@@ -10,10 +10,14 @@
 
 
 # v2ray 部署在 openshift starter
+
 1、fork 本项目到自己的Github；
+
 2、建立docker镜像：
-  A、https://hub.docker.com/
-  B、connect to Github:
+
+A、https://hub.docker.com/
+
+B、connect to Github:
     "sign in" - "Account Settings" -"Linked Accounts"
   C、Repositories
     "Create Repository"
