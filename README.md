@@ -35,7 +35,7 @@
       
       登陆openshift点击进入控制台 - "Create Project"
         
-      点击创建完成的项目，进入新页面；
+      点击创建项目 - 完成 - 进入新页面；
         
       点击deploy image按钮，选择image name，输入2中创建的docker镜像名，AAAAA/BBBBB，点击搜索按钮
         
