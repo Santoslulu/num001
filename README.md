@@ -27,19 +27,19 @@
         
 3、Project
 
-      A、https://www.openshift.com/
+    A、https://www.openshift.com/
       
-      B、project:
+    B、project:
       
-        登陆openshift点击进入控制台 - "Create Project"
+      登陆openshift点击进入控制台 - "Create Project"
         
-        点击创建完成的项目，进入新页面；
+      点击创建完成的项目，进入新页面；
         
-        点击deploy image按钮，选择image name，输入2中创建的docker镜像名，AAAAA/BBBBB，点击搜索按钮
+      点击deploy image按钮，选择image name，输入2中创建的docker镜像名，AAAAA/BBBBB，点击搜索按钮
         
-        搜索到后，
+      搜索到后，
                 
-      C、搜索到后,在"环境变量"中输入"CONFIG_JSON"
+    C、搜索到后,在"环境变量"中输入"CONFIG_JSON"
       
       将"confit.json"文件用notepad++打开，将全文的 \r\n 替换为\\n，复制
       
@@ -49,19 +49,40 @@
       
       点击"部署"
       
-      选择"ws"
+    D、创建完成后，在新页面点击"Create router"
+      
+      点击"Secure router"
+        
+      选择"TLS Termination"下的第一选项"Edge"
+        
+      到最下面，点击"创建"
+        
+    E、完成后，出现网址链接"https://AAAA.BBBB.starter-us-west-2.openshiftapps.com"
+      
+      打开链接，显示"Bad Request"
+        
+4、v2ray客户端设置
+
+    添加服务器
     
-鉴于转载网友太多，甚至还发到了国内网站上宣传，为避免不必要麻烦，docker镜像已经删除，需要的请自行fork本
-项目，然后照着这个视频 https://youtu.be/gImm4CfAnRs 自行部署镜像！ 2018/09/26
+        "地址"，将不含"https://" 的"AAAA.BBBB.starter-us-west-2.openshiftapps.com"填入
+        
+        "端口" - 443
+        
+        "用户ID" - config.json中的ID
+        
+        "额外ID" - 64
+        
+        "加密方式" - config.json中的加密方式(如"aes-128-gcm")
+        
+        "传输协议" - ws
+        
+        "底层传输安全" - tls
+        
+注：docker部署视频 https://youtu.be/gImm4CfAnRs
 
-（fork于wangyi2005/v2ray修改前）
+   openshift部署视频：https://www.youtube.com/watch?v=s83EXZbb8vQ
 
-环境变量： CONFIG_JSON（配置）、
+   环境变量： CONFIG_JSON（配置）、
 
-
-用notepad++将上述变量中 \r\n 替换为\\n，变成一行，导入容器。
-
-客户端： android Actinium、windows v2ray 可用同一个服务端。
-
-youtube频道：https://www.youtube.com/channel/UClceV39J1Z_9D4_mHkBZrMg
-
+   客户端： android Actinium、windows v2ray 可用同一个服务端。
