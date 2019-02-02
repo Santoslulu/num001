@@ -41,7 +41,7 @@
                 
     C、搜索到后,在"环境变量"中输入"CONFIG_JSON"
       
-      将"confit.json"文件用notepad++打开，将全文的 \r\n 替换为\\n，复制
+      将"confit.json"文件用notepad++打开，将全文的 \r\n 替换为\n，复制
       
       在"容器"中,粘贴，变成一行
       
