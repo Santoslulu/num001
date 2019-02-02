@@ -8,8 +8,7 @@
 <hr>
 
 
-
-# v2ray 部署在 openshift starter
+# 在 openshift starter部署v2ray
 
 1、fork 本项目到自己的Github；
 
