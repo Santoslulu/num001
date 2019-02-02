@@ -16,10 +16,12 @@
 2、建立docker镜像：
 
     A、https://hub.docker.com/
+    
+         "sign in" - "Account Settings"
 
     B、connect to Github:
     
-        "sign in" - "Account Settings" -"Linked Accounts"
+       "Linked Accounts"
         
     C、Repositories
     
