@@ -8,7 +8,7 @@
     "settings": {
       "clients": [
         {
-          "id": "3400ddc6-5292-9eaf-1b84-6945695d3e59",
+          "id": "8b769576-8621-4a46-b5c6-9383cb4ff6d5",
           "alterId": 64,
           "security": "aes-128-gcm"
         }
